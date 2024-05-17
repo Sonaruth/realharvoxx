@@ -156,7 +156,7 @@ nav ul .btn{
 }
 .about-us .about-us-right .icon-txt .text p{
     font-size: 15.5px;
-} */
+} 
 
 /* page 3 */
 .services-container{
@@ -222,7 +222,7 @@ nav ul .btn{
     position: relative;
 }
 .right-card-one .card-text:hover{
-   border-top: 5px solid;
+   border-top: 5px solid #ffa500;
    color: #ffa500;
 }
 .right-card-one .card-text h1{
@@ -783,6 +783,30 @@ footer .footer-bg{
         margin-left: 50%;
     }
 }
+
+/* media query for 400px */
+@media screen and (max-width: 400px){
+    .top .hero{
+        padding-bottom: 20px;
+    }
+
+    .right-card-one .card-text h1{
+        font-size: 17px;
+    }
+
+
+    
+
+    /* Page 3 */
+    .services .services-title{
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .right-card-one .card-text .arr a{
+        margin-bottom: 5px;
+    }
+}
+
 /* media query for 360px */
 @media screen and (max-width: 360px){
     .top .hero{
