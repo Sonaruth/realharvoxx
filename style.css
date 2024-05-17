@@ -42,7 +42,7 @@ nav .logo h1 span{
 }
 
 header nav ul{
-    width: 45%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ nav ul li{
 }
 ul li a{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 nav ul .btn{
@@ -70,26 +70,32 @@ nav ul .btn{
     margin: auto;
     margin-top: 5%;
     align-items: center;
+    padding-bottom: 30px;
 }
 .hero .hero-left{
     width: 45%;
     color: white;
 }
 .hero-left h1{
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 10px;
+    color: #DDDDDD;
 }
 .hero-left p{
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 15px;
 }
 .hero-left button{
-    width: 30%;
+    padding: 15px;
     border-radius: 50px;
     border: none;
-    color: #213b52;
     height: 40px;
     background-color: #ffa500;
+}
+.hero-left button a{
+    text-decoration: none;
+    color: #213b52;
+    font-weight: 700;
 }
 .hero .hero-right{
     width: 45%;
@@ -101,16 +107,18 @@ nav ul .btn{
 /* page 2 */
  .about-container{
     width: 100%;
-    background-color: #efe6e6;
+    background-color: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
     padding: 40px 0;
 }
  .about-us{
     width: 85%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    color: #1a2936;
 }
-.about-us .about-us-left{
+ .about-us .about-us-left{
     width: 38%;
 }
 
@@ -131,26 +139,29 @@ nav ul .btn{
 }
 
 .about-us .about-us-right .first h2{
-    font-size: 50px;
+    font-size: 45px;
     padding-bottom: 10px;
 }
-
+.about-us .about-us-right .first p{
+    font-size: 15px; 
+}
 .about-us .about-us-right .icon-txt{
     width: 45%;
     display: flex;
     margin-bottom: 15px;
 }
-
 .about-us .about-us-right .icon-txt img{
-    width: 30px;
-    margin-right: 5px;
+    width: 35px;
+    margin-right: 10px;
 }
+.about-us .about-us-right .icon-txt .text p{
+    font-size: 15.5px;
+} */
 
 /* page 3 */
 .services-container{
     width: 100%;
-    background-color: #dfecf8;
-    
+    background-color: #eff8fb;
 }
 .services{
     width: 90%;
@@ -162,13 +173,18 @@ nav ul .btn{
 .services .services-title{
     width: 90%;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 70px;
     margin-bottom: 50px;
 }
 .services-title h2{
     color: #213b52;
-    font-size: 36px;
-    font-weight: 900;
+    font-size: 35px;
+    font-weight: 700;
+}
+.services-title p{
+    font-size: 14px;
+    text-align: start;
+
 }
 .services-title .lines{
     display: flex;
@@ -176,18 +192,14 @@ nav ul .btn{
     padding: 20px;
 }
 .services-title .lines .line1{
-    width: 8%;
+    width: 12%;
     height: 10%;
     position: relative;
 }
 .services-title .lines .line2{
-    width: 3%;
+    width: 4%;
     position: absolute;
     border: 1px solid #ffa500;
-}
-.services p{
-    font-size: 19px;
-    text-align: center;
 }
 .right-card-one{
     width: 45%;
@@ -223,16 +235,15 @@ nav ul .btn{
     width: 90%;
     margin: auto;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
     color: #5e5e5e;
-    margin-bottom: 20px;
     text-align: start;
 }
 .right-card-one .card-text i{
     width: 10%;
     margin: auto;
     color: #5e5e5e;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .right-card-one .card-text .arr{
     width: 90%;
@@ -249,6 +260,7 @@ nav ul .btn{
 .right-card-one .card-text .arr a{
     text-decoration: none;
     color:#5e5e5e;
+    margin-bottom: 40px;
 }
 
 /* page 4 */
@@ -348,9 +360,14 @@ nav ul .btn{
     text-align: center;
     margin-bottom: 30px;
 }
+.address-container .first-address h2{
+    font-size: 20px;
+}
 .address-container .first-address p{
     width: 95%;
     margin: auto;
+    font-family: serif;
+    font-size: 15px;
 }
 .contact-container .contact-page .addresses{
     width: 47%;
@@ -392,6 +409,7 @@ nav ul .btn{
 }
 .contact-page .address-container h2{
     color: grey;
+    font-size: 20px;
 }
 .contact-page .address-container h3 a{
     text-decoration: none;
@@ -399,6 +417,7 @@ nav ul .btn{
 }
 .contact-page .address-container p{
     color: grey;
+    font-size: 14px
 }
 .contact-container .contact-pg-right{
     width: 46%;
@@ -407,7 +426,6 @@ nav ul .btn{
     padding-top: 25px;
    
 }
-
 .contact-container .contact-pg-right form{
     width: 90%;
     margin: auto;
@@ -440,9 +458,10 @@ nav ul .btn{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .contact-pg-right .submit button{
-    width: 25%;
+    width: 30%;
     height: 40px;
     border: none;
     font-size: 14px;
@@ -463,6 +482,10 @@ footer .footer-bg{
     text-align: center;
     padding-top: 100px;
 }
+footer .footer-bg .text em{
+    font-size: 12px;
+    font-style: italic;
+}
 .footer-bg .text{
     width: 100%;
     line-height: 3;
@@ -474,8 +497,8 @@ footer .footer-bg{
     justify-content: center; 
 }
 .text .footer-button input{
-    width: 45%;
-    height: 50px;
+    width: 55%;
+    height: 45px;
     border-radius: 50px;
     padding-left: 15px;
     position: relative;
@@ -483,8 +506,8 @@ footer .footer-bg{
     font-size: 16px;  
 }
 .footer-button button{
-    width: 10%;
-    height: 50px;
+    width: 20%;
+    height: 45px;
     border-radius: 50px;
     background-color: #fdc134;
     position: absolute;
@@ -501,57 +524,28 @@ footer .footer-bg{
     color: white;
     margin-top: 10%;
     padding-left: 100px;
+    padding-bottom: 30px;
 }
 
-
-
-
-
-/* media query for 1130 */
-/* @media screen and (max-width: 1130px){
-    
-header nav ul{
-    width: 55%;
-}
-header nav .logo{
-    font-size: 22px;
-}
-.hero-left{
-    padding-bottom: 10px;
-}
-.hero .hero-right{
-    width: 85%;
-}
-.hero-left button{
-    width: 50%;
-} */
-
-/* page 2 */
-/* .about-us{
-   flex-direction: column;
-   margin: auto;
-}
-.about-us .about-us-left{
-    width: 100%;
-}
-.about-us .about-us-left img{
-    margin-top: 5%;
+/* Media querie for 1001px */
+@media screen and (max-width: 1212px){
+    header nav .logo{
+        display: none;
     }
-.about-us .about-us-right{
-    width: 100%;
+    header nav ul{
+        display: none;
     }
-.about-us-right .first{
-        padding-top: 10px;
+}
+@media screen and (max-width: 1101px){
+    header nav .logo{
+        display: none;
     }
-.about-us-right .first h2{
-        font-size: 35px;
-        font-weight: 900;
+    header nav ul{
+        display: none;
     }
-.others .icon-txt{
-        width: 45%;
-    }
+}
 
-} */
+
 
 /* Media querie for 1000px */
 @media screen and (max-width: 1000px){
@@ -582,7 +576,6 @@ header nav ul{
     font-size: 15px;
 }
 .hero-left button{
-    width: 40%;
     height: 45px;
 }  
 .hero-left button a{
@@ -608,13 +601,12 @@ header nav ul{
 }
 .about-us .about-us-right{
     width: 100%;
-    /* flex-direction: column; */
 }
 .about-us .about-us-right .first h2{
     font-size: 40px;
 }
 .about-us .about-us-right .first p{
-    font-size: 21px;
+    font-size: 19px;
 }
 .others .icon-txt{
     width: 100%;
@@ -628,24 +620,21 @@ header nav ul{
 .services{
     width: 90%;
     margin: auto;
-    /* flex-direction: column; */
 }
 .services .services-title{
     width: 100%;
     text-align: center;
 }
 .services-title .lines .line1{
-    width: 40%;
+    width: 20%;
 }
 .services-title .lines .line2{
-    width: 15%;
+    width: 5%;
 }
 .services p{
-    font-size: 22px;
-    padding: 20px;
-}
-.services .cards{
-    /* flex-direction: column;     */
+    font-size: 14px;
+    text-align: center;
+    /* padding: 20px; */
 }
 .right-card-one{
     width: 90%;
@@ -704,6 +693,12 @@ header nav ul{
 .contact-page .address-container p{
     font-size: 18px;
     line-height: 30px;
+}
+.contact-container .contact-pg-right form{
+   flex-direction: column;
+}
+.contact-pg-right form input{
+    width: 100%;
 }
 .contact-pg-right .submit button{
     width: 40%;
@@ -764,6 +759,7 @@ footer .footer-bg{
     .about-us .about-us-right .icon-txt{
         width: 100%;
     }
+
     .contact-container .contact-page .addresses{
         width: 100%;
         margin-bottom: 30px;
@@ -787,6 +783,50 @@ footer .footer-bg{
         margin-left: 50%;
     }
 }
+/* media query for 360px */
+@media screen and (max-width: 360px){
+    .top .hero{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .hero-left h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .hero-left button{
+       width: 70%;
+    }
+
+    /* page 2 */
+    .about-us .about-us-right .first h2{
+            font-size: 30px;
+    }
+    .about-us .about-us-right .first p{
+        font-size: 15px;
+    }
+
+    /* page 3 */
+    .right-card-one .card-text h1{
+        font-size: 15px;
+    }
+    .right-card-one .card-text .arr a{
+        margin-bottom: 5px;
+    }
+
+    /* page 5 */
+    .contact-heading .lines .line1{
+        width: 40%;
+    }
+    .contact-heading .lines .line2{
+        width: 15%;
+    }
+    .contact-container .contact-pg-right form{
+        flex-direction: column;
+    }
+    .contact-container .contact-pg-right form input{
+        width: 100%;
+    }
+}
 
 /* media query for 388px */
 @media screen and (max-width: 388px){
@@ -795,7 +835,6 @@ footer .footer-bg{
     }
     .text .footer-button input{
         width: 100%;
-        /* align-items: center; */
     }
     .footer-button button{
         width: 40%;
@@ -808,7 +847,6 @@ footer .footer-bg{
     }
     .hero-left button{
         width: 100%;
-        /* outline: 2px solid red; */
     }
     .right-card-one .card-text h1{
        font-size: 12px;
@@ -817,364 +855,3 @@ footer .footer-bg{
             font-size: 16px;
         }
     }
-/* media query for 768 */
-/* @media screen and (max-width: 768px){ */
-    /* .top{
-       width: 110%;
-    }
-    .hero-left h1{
-        font-size: 35px;
-        text-align: center;
-        font-weight: 900;
-    }
-    .hero-left p{
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .hero-left button{
-       font-size: 20px;
-    } */
-
-    /* page 2 */
-  
-  
- 
-/* page 3 */
-    /* .services-container{
-        width: 100%;
-    }
-    .services p{
-        font-size: 18px;
-    } */
-    .services .cards{
-        /* height: 190vh; */
-    }
-    /* .left-card-one .card-text{
-        left: 72px;
-    }
-    .services .cards{
-        display: flex;
-        flex-direction: row;
-    }
-    .left-card-one .card-image img{
-        width: 90%;
-    }
-    .left-card-one .card-text{
-        height: 35vh;
-        left: 21px;
-    }
-    .right-card .right-card-one{
-        margin-bottom: 350px;
-    }
-    .right-card-one .card-image img{
-        width: 90%;
-    }
-    .right-card-one .card-text{
-        height: 37vh;
-        left: 21px;
-    } */
-
-    /* page 4 */
-    /* .price-container{
-        width: 110%;
-    }
-    .pricing-4{
-       margin-top: 50%;
-    }
-    .contact-pg{
-        margin-top: 0%;
-    } */
-
-
-}
-
-
-
- /* media query for 570 */
-@media screen and (max-width: 570px){
-    
-    /* page 2 */
-    /* .services p{
-       margin: 5px;
-    }
-    .left-card-one .card-text{
-        height: 39vh;
-    }
-    .left-card-one .card-text p{
-        font-size: 22px;
-    }
-    .right-card-one .card-text{
-        height: 39vh;
-    }
-    .right-card-one .card-text p{
-        font-size: 21px;
-    }
-    .right-card .right-card-one{
-    }
-    .page-4{
-        width: 100%;
-    }
-    .pricing .price-bg{
-        width: 100%;
-        margin: auto;
-    } */
-
-/* Page 5  */
-/* .contact-pg{
-    width: 100%;
-}
-.contact-pg-left .address-container p{
-   font-size: 15px;
-    text-align: center;
-}
-.contact-pg-container .contact-pg-right{
-    width: 100%;
-    padding-left: 0px;
-    height: 450px;
-}
-.contact-pg-right .contact-form__input :nth-child(1),
-.contact-pg-right .contact-form__input :nth-child(2)
-{
-    width: 100%;
-}
-.contact-pg-right .subject input{
-    width: 100%;
-}
-.contact-pg-right .my-text-area textarea{
-    width: 100%;
-} */
-
-/* Page 6 */
-/* footer{
-    margin-top: 60px;
-}
-.footer-bg em{
-    font-size: 18px;
-}
-.footer-bg .copy-right{
-    padding-left: 50px;
-}
-} */
-
-
-/* Media query for 540 */
-@media screen and (max-width: 540px){
-    /* .hero .hero-right{
-        width: 100%;
-    }
-    .hero .hero-right img{
-        width: 100%;
-    }
-    .hero-left p{  
-        width: 100%; 
-        font-size: 16px;
-    }
-    */
-   
-   /* page 2 */
-    
-
-    /* Page 3 */
- 
-    .services .cards{
-        /* flex-direction: column; */
-        /* justify-content: space-around; */
-    }
-    /* .services p{
-        font-size: 16px;
-    }
-    .left-card .left-card-one{
-        margin-bottom: 38%;
-    }
-    .left-card-one .card-text{
-        left: 30px;
-    }
-    .right-card .right-card-one{
-        margin-bottom: 38%;
-    }
-    .right-card .left-card-one{
-        margin-bottom: 38%;
-    }
-    .right-card-one .card-text{
-        left: 30px;
-    } */
-
-
-/* page 4 */
-.price-container{
-    /* padding: 0;
-    height: 50%; */
-}
-.pricing .price-bg{
-    /* width: 85%; 
-    display: flex;
-    justify-content: center; */
-    /* width: 85%;
-    margin: auto; */
-}
-
-/* Page 5 */
-.contact-container{
-
-}
-
-
-
-
-}
-
-
-
-
-
- 
-/* media query for 430 */
-@media screen and (max-width: 430px){
-    
-
-/* page 3 */
-/* .left-card-one .card-text{
-    height: 42vh;
-}
-.right-card-one .card-text{
-    height: 42vh;
-}
-
-.price-container{
-    padding-top: 50px;
-}
-.footer-bg .copy-right{
-    padding-left: 30px;
-} */
-}
-
-
-/* media query for 390 */
-@media screen and (max-width: 390px){
-/* page 2 */
-    
-
-    /* .services p{
-        font-size: 18px;
-    }
-
-    .left-card .left-card-one{
-        margin-bottom: 110%;
-    }
-    .left-card-one .card-text{
-        height: 55vh;
-    }
-    .right-card .right-card-one{
-        margin-bottom: 110%;
-    }
-    .right-card-one .card-text{
-        height: 55vh;
-    } */
-
-
- /* page 4 */
-/* .price-container{
-    margin-top: 450px;
-}
-}  */
-
-
-
-
-
-
-/* media query for 375 */
-@media screen and (max-width: 375px){
-    /* .top{
-        width: 100%;
-    }
-    .top .hero{
-        width: 100%;
-    }
-    .hero .hero-left{
-        width: 100%;
-    }
-    .hero-left h1{
-       width: 90%;
-    }
-    .hero-left p{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-    .hero .hero-right{
-        width: 90%;
-    }
-    .hero .hero-right img{
-        width: 100%;
-    } */
-
-    /* page 2 */
-
-    /* .others .icon-txt{
-        width: 100%;
-    }
-    .about-us .about-us-right p{
-        font-size: 14px;
-    } */
-
-    /* page 3 */
-    .services-container{
-        /* width: 100%; */
-        /* height: 150vh; */
-    }
-    .services{
-        /* width: 100%;
-        margin: auto; */
-        /* margin-top: 25%; */
-    }
-
-    /* .card .left-card{
-        width: 25%;
-    }
-    .left-card-one .card-text{
-        width: 80%;
-        height: 55vh;
-        left: 35px;
-    }
-    .left-card-one .card-image img{
-        width: 100%;
-    }
-    .card .right-card{
-        width: 25%;
-    }
-    .right-card-one .card-text{
-        width: 80%;
-        height: 60vh;
-        left: 35px;
-    }
-    .right-card-one .card-image img{
-        width: 100%;
-    } */
-
-    /* page 4 */
-    /* .page-4{
-        width: 100%;
-    }
-    .pricing{
-        width: 100%;
-        margin-top: 230%;
-}
-.pricing .price-bg{
-    width: 100%;
-    padding: 0px;
-    margin: auto;
-} 
-
-.pricing .price-bg img{
-    width: 95%;
-}  */
-
-/* Page 5 */
-.contact-pg{
-    /* width: 100%;
-    height: 1350px; */
-}
-
-}
